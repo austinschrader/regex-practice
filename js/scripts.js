@@ -27,13 +27,16 @@ $(document).ready(function () {
 		let groupsInput = $('input#groupsInput').val();
 		let groupsRegex = $('input#groupsRegex').val();
 		let groupsRegInstance = new RegExp(groupsRegex, 'gi');
-		let groupsRegValue = groupsInput.replace(groupsRegInstance, 'x');
+		let groupsRegValue = groupsInput.replace(groupsRegInstance, '*');
 		$('.groupsOutput').text(groupsRegValue);
 
 		// Characters Functionality
 		let charactersInput = $('input#charactersInput').val();
+		console.log(charactersInput);
 		let charactersRegex = $('input#charactersRegex').val();
-		let charactersRegInstance = new RegExp(charactersRegex, 'i');
+		console.log(charactersRegex);
+		let charactersRegInstance = new RegExp(charactersRegex, 'gi');
+		console.log(charactersRegInstance);
 		let charactersRegValue = charactersInput.replace(
 			charactersRegInstance,
 			'x'
