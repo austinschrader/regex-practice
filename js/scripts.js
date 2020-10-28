@@ -32,11 +32,8 @@ $(document).ready(function () {
 
 		// Characters Functionality
 		let charactersInput = $('input#charactersInput').val();
-		console.log(charactersInput);
 		let charactersRegex = $('input#charactersRegex').val();
-		console.log(charactersRegex);
 		let charactersRegInstance = new RegExp(charactersRegex, 'gi');
-		console.log(charactersRegInstance);
 		let charactersRegValue = charactersInput.replace(
 			charactersRegInstance,
 			'x'
@@ -46,10 +43,10 @@ $(document).ready(function () {
 		// Quantifier Functionality
 		let quantifiersInput = $('input#quantifiersInput').val();
 		let quantifiersRegex = $('input#quantifiersRegex').val();
-		let quantifiersRegInstance = new RegExp(quantifiersRegex, 'i');
+		let quantifiersRegInstance = new RegExp(quantifiersRegex, 'gi');
 		let quantifiersRegValue = quantifiersInput.replace(
 			quantifiersRegInstance,
-			'x'
+			'!'
 		);
 		$('.quantifiersOutput').text(quantifiersRegValue);
 	});
