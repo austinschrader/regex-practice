@@ -14,6 +14,6 @@ $(document).ready(function () {
 		let flagRegex = $('input#flagRegex').val();
 		let regInstance = new RegExp(flagRegex, 'gi');
 		let regValue = flagInput.replace(regInstance, 'x');
-		$('flagOutput').text(regValue);
+		$('.flagOutput').text(regValue);
 	});
 });
