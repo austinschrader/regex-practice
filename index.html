@@ -10,100 +10,176 @@
 		<div class="container">
 			<h1>Regex Practice</h1>
 			<form id="regex-form">
-				<!-- Characters Example -->
-				<h2 class="characters">Basic Regex</h2>
+				<!-- Basic Title -->
+				<h2 class="basic">Basic Regex</h2>
+				<!-- Basic Input -->
 				<div class="form-group">
-					<h5><label for="regex1">String You'd Like To Regex:</label></h5>
+					<h5><label for="basic1">String to Regex:</label></h5>
 					<input
-						id="regex1"
+						id="basic1"
 						class="form-control"
 						type="text"
 						value="Replace all of the vowels with an X, please!"
 					/>
 				</div>
+				<!-- Basic Regex -->
+				<div class="form-group">
+					<h5><label for="basic2">Regex:</label></h5>
+					<input
+						id="basic2"
+						class="form-control"
+						type="text"
+						value="/[aieou]/gi"
+					/>
+				</div>
+				<!-- Basic Output -->
 				<div class="output1"></div>
-				<!-- Characters Button -->
-				<button type="button" class="regexbutton btn btn-warning">
+				<!-- Basic Button -->
+				<button type="submit" class="regexbutton btn btn-warning">
 					Regex This Example!
 				</button>
 
-				<!-- Flags Example -->
+				<!-- Flags Title -->
 				<h2 class="flags">Flags</h2>
+				<!-- Flags Input -->
 				<div class="form-group">
-					<h5><label for="regex2">Enter something</label></h5>
+					<h5><label for="flag1">String to Regex:</label></h5>
 					<input
-						id="regex2"
+						id="flag1"
 						class="form-control"
 						type="text"
 						value="Replace all of the vowels with an X, please!"
 					/>
 				</div>
+				<!-- Flags Regex -->
+				<div class="form-group">
+					<h5><label for="flag2">Regex:</label></h5>
+					<input
+						id="flag2"
+						class="form-control"
+						type="text"
+						value="/[aieou]/gi"
+					/>
+				</div>
+				<!-- Flags Output -->
 				<div class="output2"></div>
-				<button type="button" class="regexbutton btn btn-warning">
+				<!-- Flags Button -->
+				<button type="submit" class="regexbutton btn btn-warning">
 					Regex This Example
 				</button>
-				<!-- Patterns Example -->
+
+				<!-- Patterns Title -->
 				<h2 class="groups">Patterns</h2>
+				<!-- Patterns Input -->
 				<div class="form-group">
-					<h5><label for="regex3">Enter something</label></h5>
+					<h5><label for="pattern1">String to Regex:</label></h5>
 					<input
-						id="regex3"
+						id="pattern1"
 						class="form-control"
 						type="text"
 						value="Replace everything that's not a vowel, please!"
 					/>
 				</div>
+				<!-- Patterns Regex -->
+				<div class="form-group">
+					<h5><label for="pattern2">Regex:</label></h5>
+					<input
+						id="pattern2"
+						class="form-control"
+						type="text"
+						value="/[aieou]/gi"
+					/>
+				</div>
 				<div class="output3"></div>
 				<!-- Patterns Button -->
-				<button type="button" class="regexbutton btn btn-warning">
+				<button type="submit" class="regexbutton btn btn-warning">
 					Regex This Example
 				</button>
-				<!-- Ranges Example -->
+
+				<!-- Ranges Title -->
 				<h2 class="ranges">Groups & Ranges</h2>
+				<!-- Ranges Input -->
 				<div class="form-group">
-					<h5><label for="ranges">Groups & Ranges</label></h5>
+					<h5><label for="ranges1">String to Regex:</label></h5>
 					<input
-						id="ranges"
+						id="ranges1"
 						class="form-control"
 						type="text"
 						value="Abracadabra!"
 					/>
 				</div>
+				<!-- Ranges Regex -->
+				<div class="form-group">
+					<h5><label for="ranges2">Regex:</label></h5>
+					<input
+						id="ranges2"
+						class="form-control"
+						type="text"
+						value="/[aieou]/gi"
+					/>
+				</div>
+				<!-- Ranges Output -->
 				<div class="output4"></div>
 				<!-- Ranges Button -->
-				<button type="button" class="regexbutton btn btn-warning">
+				<button type="submit" class="regexbutton btn btn-warning">
 					Regex This Example
 				</button>
-				<!-- Regex Characters Example -->
-				<h2 class="ranges">Regex Characters</h2>
+
+				<!-- Characters Title -->
+				<h2 class="ranges">Characters</h2>
+				<!-- Characters Input -->
 				<div class="form-group">
-					<h5><label for="ranges">Regex Characters</label></h5>
+					<h5><label for="characters1">String to Regex:</label></h5>
 					<input
-						id="ranges"
+						id="characters1"
 						class="form-control"
 						type="text"
 						value="Abracadabra!"
 					/>
 				</div>
+				<!-- Characters Regex -->
+				<div class="form-group">
+					<h5><label for="characters2">Regex:</label></h5>
+					<input
+						id="characters2"
+						class="form-control"
+						type="text"
+						value="/[aieou]/gi"
+					/>
+				</div>
+				<!-- Characters Output -->
 				<div class="output5"></div>
 				<!-- Ranges Button -->
-				<button type="button" class="regexbutton btn btn-warning">
+				<button type="submit" class="regexbutton btn btn-warning">
 					Regex This Example
 				</button>
-				<!-- Quantifiers Example -->
+
+				<!-- Quantifiers Title -->
 				<h2 class="quantifiers">Quantifiers</h2>
+				<!-- Quantifiers Input -->
 				<div class="form-group">
-					<h5><label for="quantifiers">Quantifiers</label></h5>
+					<h5><label for="quantifiersInput">String to Regex:</label></h5>
 					<input
-						id="quantifiers"
+						id="quantifiersInput"
 						class="form-control"
 						type="text"
 						value="Hi there!!!!! How's life?!! It's good here!!!!!!!!"
 					/>
 				</div>
+				<!-- Quantifiers Regex -->
+				<div class="form-group">
+					<h5><label for="quantifiersRegex">Regex:</label></h5>
+					<input
+						id="quantifiersRegex"
+						class="form-control"
+						type="text"
+						value="/[aieou]/gi"
+					/>
+				</div>
+				<!-- Quantifiers Output -->
 				<div class="output6"></div>
 				<!-- Quantifiers Button -->
-				<button type="button" class="regexbutton btn btn-warning">
+				<button type="submit" class="regexbutton btn btn-warning">
 					Regex This Example
 				</button>
 			</form>
