@@ -19,14 +19,14 @@ $(document).ready(function () {
 		// Pattern Functionality
 		let patternsInput = $('input#patternsInput').val();
 		let patternsRegex = $('input#patternsRegex').val();
-		let patternsRegInstance = new RegExp(patternsRegex, 'i');
+		let patternsRegInstance = new RegExp(patternsRegex, 'gi');
 		let patternsRegValue = patternsInput.replace(patternsRegInstance, 'x');
 		$('.patternsOutput').text(patternsRegValue);
 
 		// Groups Functionality
 		let groupsInput = $('input#groupsInput').val();
 		let groupsRegex = $('input#groupsRegex').val();
-		let groupsRegInstance = new RegExp(groupsRegex, 'i');
+		let groupsRegInstance = new RegExp(groupsRegex, 'gi');
 		let groupsRegValue = groupsInput.replace(groupsRegInstance, 'x');
 		$('.groupsOutput').text(groupsRegValue);
 
